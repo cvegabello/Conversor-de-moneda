@@ -40,7 +40,9 @@ if (cod_seleccion == 1):
          Elige una opción:  """
     
     cod_seleccion = int(input(menu))
-    
+
+    print("           ")
+        
     if (cod_seleccion == 1):
         calculo_pesos_to_dolar(valor_dolar_colombia, "colombianos")
 
@@ -60,6 +62,7 @@ elif (cod_seleccion == 2):
          Elige una opción:   """
     
     cod_seleccion = int(input(menu))
+    print("           ")
     if (cod_seleccion == 1):
         calculo_pesos_to_dolar(valor_dolar_argentina, "argentinos")
     elif (cod_seleccion == 2):
@@ -78,6 +81,7 @@ elif (cod_seleccion == 3):
          Elige una opción:  """
     
     cod_seleccion = int(input(menu))
+    print("           ")
     if (cod_seleccion == 1):
         calculo_pesos_to_dolar(valor_dolar_mexico, "mexicanos")
     elif (cod_seleccion == 2):
