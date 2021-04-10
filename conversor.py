@@ -3,6 +3,22 @@ valor_dolar_colombia = 3650
 valor_dolar_argentina =  65
 valor_dolar_mexico = 24
 os.system ("clear") 
+
+def calculo_pesos_to_dolar(valor_dolar_pais, from_pais):
+    pesos = input("Cuantos pesos " + from_pais + " tienes?:")
+    pesos = float(pesos)
+    dolares = pesos / valor_dolar_pais
+    dolares = round(dolares,2)
+    print(f"Tienes $ {dolares:,.2f}" + " dolares")    
+
+def calculo_dolar_to_pesos(valor_dolar_pais, from_pais):
+    dolares = input("Cuantos dolares tienes?:")
+    dolares = float(dolares)
+    pesos = dolares * valor_dolar_pais
+    pesos = round(pesos,2)
+    print(f"Tienes $ {pesos:,.2f}" + " pesos " + from_pais + ".")
+
+
 menu = """
         💰 Bienvenido al conversor de monedas. Por favor seleccione la moneda extranjera.
 
@@ -26,19 +42,10 @@ if (cod_seleccion == 1):
     cod_seleccion = int(input(menu))
     
     if (cod_seleccion == 1):
-        pesos = input("Cuantos pesos colombianos tienes?:")
-        pesos = float(pesos)
-        dolares = pesos / valor_dolar_colombia
-        dolares = round(dolares,2)
-        #dolares = str(dolares)
-        print(f"Tienes $ {dolares:,.2f}" + " dolares")    
+        calculo_pesos_to_dolar(valor_dolar_colombia, "colombianos")
+
     elif (cod_seleccion == 2):
-        dolares = input("Cuantos dolares tienes?:")
-        dolares = float(dolares)
-        pesos = dolares * valor_dolar_colombia
-        pesos = round(pesos,2)
-        #pesos = str(pesos)
-        print(f"Tienes $ {pesos:,.2f}" + " pesos colombianos.")
+        calculo_dolar_to_pesos(valor_dolar_colombia, "colombianos")
     else:
         print("La opción " + str(cod_seleccion) + " no es valida, por favor digite la opción correcta.")
 
@@ -54,19 +61,9 @@ elif (cod_seleccion == 2):
     
     cod_seleccion = int(input(menu))
     if (cod_seleccion == 1):
-        pesos = input("Cuantos pesos argentinos tienes?:")
-        pesos = float(pesos)
-        dolares = pesos / valor_dolar_argentina
-        dolares = round(dolares,2)
-        #dolares = str(dolares)
-        print(f"Tienes $ {dolares:,.2f}" + " dolares")   
+        calculo_pesos_to_dolar(valor_dolar_argentina, "argentinos")
     elif (cod_seleccion == 2):
-        dolares = input("Cuantos dolares tienes?:")
-        dolares = float(dolares)
-        pesos = dolares * valor_dolar_argentina
-        pesos = round(pesos,2)
-        #pesos = str(pesos)
-        print(f"Tienes $ {pesos:,.2f}" + " pesos argentinos.")
+        calculo_dolar_to_pesos(valor_dolar_argentina, "argentinos")
     else:
         print("La opción " + str(cod_seleccion) + " no es valida, por favor digite la opción correcta.")
 
@@ -82,19 +79,9 @@ elif (cod_seleccion == 3):
     
     cod_seleccion = int(input(menu))
     if (cod_seleccion == 1):
-        pesos = input("Cuantos pesos mexicanos tienes?:")
-        pesos = float(pesos)
-        dolares = pesos / valor_dolar_mexico
-        dolares = round(dolares,2)
-        #dolares = str(dolares)
-        print(f"Tienes $ {dolares:,.2f}" + " dolares")    
+        calculo_pesos_to_dolar(valor_dolar_mexico, "mexicanos")
     elif (cod_seleccion == 2):
-        dolares = input("Cuantos dolares tienes?:")
-        dolares = float(dolares)
-        pesos = dolares * valor_dolar_mexico
-        pesos = round(pesos,2)
-        #pesos = str(pesos)
-        print(f"Tienes $ {pesos:,.2f}" + " pesos mexicanos.")
+        calculo_dolar_to_pesos(valor_dolar_mexico, "mexicanos")
     else:
         print("La opción " + str(cod_seleccion) + " no es valida, por favor digite la opción correcta.")
 
