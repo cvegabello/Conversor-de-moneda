@@ -20,7 +20,7 @@ def calculo_dolar_to_pesos(valor_dolar_pais, from_pais):
 
 
 menu = """
-        💰 Bienvenido al conversor de monedas. Por favor seleccione la moneda extranjera.
+        💰 Bienvenido al conversor de monedas, super FANTASTICO. Por favor seleccione la moneda extranjera.
 
          1 - Pesos colombianos.
          2 - Pesos argentinos.
