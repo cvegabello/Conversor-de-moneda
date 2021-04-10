@@ -30,8 +30,8 @@ if (cod_seleccion == 1):
         pesos = float(pesos)
         dolares = pesos / valor_dolar_colombia
         dolares = round(dolares,2)
-        dolares = str(dolares)
-        print("Tienes $" + dolares + " dolares")    
+        #dolares = str(dolares)
+        print(f"Tienes $ {dolares:,.2f}" + " dolares")    
     elif (cod_seleccion == 2):
         dolares = input("Cuantos dolares tienes?:")
         dolares = float(dolares)
@@ -58,15 +58,15 @@ elif (cod_seleccion == 2):
         pesos = float(pesos)
         dolares = pesos / valor_dolar_argentina
         dolares = round(dolares,2)
-        dolares = str(dolares)
-        print("Tienes $" + dolares + " dolares")    
+        #dolares = str(dolares)
+        print(f"Tienes $ {dolares:,.2f}" + " dolares")   
     elif (cod_seleccion == 2):
         dolares = input("Cuantos dolares tienes?:")
         dolares = float(dolares)
         pesos = dolares * valor_dolar_argentina
         pesos = round(pesos,2)
-        pesos = str(pesos)
-        print("Tienes $" + pesos + " pesos argentinos.")
+        #pesos = str(pesos)
+        print(f"Tienes $ {pesos:,.2f}" + " pesos argentinos.")
     else:
         print("La opción " + str(cod_seleccion) + " no es valida, por favor digite la opción correcta.")
 
@@ -86,15 +86,15 @@ elif (cod_seleccion == 3):
         pesos = float(pesos)
         dolares = pesos / valor_dolar_mexico
         dolares = round(dolares,2)
-        dolares = str(dolares)
-        print("Tienes $" + dolares + " dolares")    
+        #dolares = str(dolares)
+        print(f"Tienes $ {dolares:,.2f}" + " dolares")    
     elif (cod_seleccion == 2):
         dolares = input("Cuantos dolares tienes?:")
         dolares = float(dolares)
         pesos = dolares * valor_dolar_mexico
         pesos = round(pesos,2)
-        pesos = str(pesos)
-        print("Tienes $" + pesos + " pesos mexicanos")
+        #pesos = str(pesos)
+        print(f"Tienes $ {pesos:,.2f}" + " pesos mexicanos.")
     else:
         print("La opción " + str(cod_seleccion) + " no es valida, por favor digite la opción correcta.")
 
